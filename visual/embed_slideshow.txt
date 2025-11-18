@@ -1,0 +1,424 @@
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: transparent;
+            color: #444444;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tab-container {
+            overflow: hidden;
+            background-color: transparent;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .tablink {
+            background-color: #23203e; /* Navy blue background */
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 15px 25px; /* Thicker padding */
+            transition: 0.3s;
+            font-size: 20px; /* Adjusted font size */
+            color: #ffffff; /* White text */
+            font-weight: bold;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .tablink:hover {
+            background-color: #191634; /* Slightly darker navy on hover */
+            color: #ffffff; /* White text on hover */
+        }
+
+        .tablink.active {
+            background-color: #ffffff; /* White background for active tab */
+            color: #23203e; /* Navy blue text for active tab */
+            font-weight: bold;
+        }
+
+        .slideshow-content {
+            width: 100%; /* Changed to 100% to allow flex items to take space */
+            display: flex; /* Added flex display */
+            align-items: flex-start; /* Align items to the top */
+            justify-content: center; /* Center content horizontally */
+            max-width: 1000px; /* Increased max-width for better side-by-side display */
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 50%; /* Each takes 50% of the flex container */
+        }
+
+        .slide {
+            display: none;
+            text-align: center;
+        }
+
+        .slide img {
+            width: 100%;
+            max-width: 100%; /* Set a maximum width for the images */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .text {
+            color: #ffffff; /* Ensured text color is white */
+            font-size: 16px; /* Adjusted font size for readability */
+            padding: 0 20px; /* Added padding for spacing */
+            width: 50%; /* Each takes 50% of the flex container */
+            text-align: left; /* Align text to the left */
+        }
+
+        h3 {
+            color: #23203e; /* Specific navy blue for h3 */
+        }
+
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+    </style>
+
+    <div class="tab-container">
+        <button class="tablink active" onclick="openSlideshow(event, 'Europe')">Europe</button>
+        <button class="tablink" onclick="openSlideshow(event, 'Lisbon')">Lisbon</button>
+        <button class="tablink" onclick="openSlideshow(event, 'Spain')">Spain</button>
+    </div>
+
+    <div id="Europe" class="slideshow-content">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/71D23869-2AC4-491C-95DE-C95AF672268C.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/EAFCC871-4773-4804-BCFD-59A900D9D47B.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1258.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1261.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1339.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1375.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1400.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1419.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1708.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1746.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1750.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1853.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1855.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1885.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1925.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1935.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1956.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_1981.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/europe/IMG_2014.jpeg" style="width:100%">
+            </div>
+        </div>
+        <div class="text">The travelers flew from JFK to London in Virgin Atlantic Premium Economy. In London, they stayed at the Bankside Autograph Collection, which offered close access to Borough Market, London Bridge, the Globe, and the South Bank. Their itinerary included visits to St. Paul’s Cathedral, Temple Bar, historic pubs, and an afternoon tea. They also explored Westminster, Big Ben, Buckingham Palace, Regent Street, and Mayfair’s major shopping areas. </p>
+
+       <p> Mid-trip, they switched hotels to The Waldorf Hilton, remaining in central London before taking the Eurostar Premium train to Paris.</p>
+
+    <p>    In Paris, they stayed at the Paris Opera Marriott, with activities that included Montmartre, Versailles, the Tuileries Garden, the Louvre, Notre Dame, Luxembourg Gardens, the Champs-Élysées, and the Eiffel Tower/Trocadéro area. </p>
+
+        The return flight was Air France Business Class from CDG to IAD, providing a premium cabin experience to end the trip.
+
+    <h3>    Using 452,000 points and $3,810.85, the travelers received $17,016.16 in total value — resulting in $13,205.31 in savings.</h3></div>
+    </div>
+
+    <div id="Lisbon" class="slideshow-content" style="display:none">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/20250316_123655_099.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/20250316_132424_843.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/6B2672FD-A6FE-4849-BF69-138715F81471.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8499.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8527.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8555.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8566.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8573.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8575.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8578.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8597.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8599.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8608.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8611.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8619.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8621.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8626.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8639.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8661.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8666.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8753.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8773.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8800.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8808.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8827.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8924.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_8929.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9004.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9065.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9074.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9078.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9082.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9099.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9125.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9172.jpeg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/lisbon/IMG_9176.jpeg" style="width:100%">
+            </div>
+        </div>
+                <div class="text">The trip began in New York with a Business Class Air France flight from EWR to Lisbon. After arriving, the travelers checked into IHG Convent Square Lisbon, giving them direct access to the historic Baixa and Chiado areas for walking, dining, and sightseeing.
+        
+                They then continued to the Azores, staying first at Hilton Lagoa and then at Santa Barbara Eco Resort on São Miguel. These locations offered convenient access to the island’s coastline, hot springs, beaches, and natural attractions. The stay at Santa Barbara placed them directly on the island’s north shore, ideal for relaxing on the black-sand beach and exploring local villages.
+        
+                To return home, they flew from the Azores to Boston and completed the journey to NYC via Amtrak.
+        
+                Using 243,363 points plus $1,761.20, the travelers received $10,298.56 of total trip value, saving $8,537.36 compared to paying cash.</div>    </div>
+
+    <div id="Spain" class="slideshow-content" style="display:none">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/0c944fbd-bc1c-46cf-a196-358c4dca69ec.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/1ad42173-5afc-4e92-9bcb-8e236284e3c1.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/25aa0905-4282-4736-9fee-6ea5a6affa2b.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/2c35cfa9-0bf3-42b3-b315-8d51e2734a88.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/6a535b89-a6de-4f38-b2cf-8a2a0a41eb6d.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/8841faf4-4518-41c9-a61e-849e06ca0864.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/88c6621c-93e1-4529-8979-3320e7d55996.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a041a84b-16aa-48d3-895e-315b221e6ea7.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a13ab11d-f1ae-404b-8e53-e67a065c2c46.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a7e42f68-69ae-4f8d-971a-b6a42ab7944d.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a8ad6117-6f14-4696-aa70-a95e4454ea1c.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a8d62a21-64f8-4df6-97fa-3b3a1a235519.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/b236d8da-be19-4da1-8833-2c8131141752.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/c061a956-c009-445f-a4f4-01163838c7f2.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/d2088cf0-1751-40f3-b4e5-86f631a96909.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/e639d9ea-6ff9-4586-ad29-b70dcbfc5621.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/f6c9f708-6b86-4aeb-852b-1577337084bd.JPG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/face8ce6-67e3-453b-882b-5f252aba7667.JPG" style="width:100%">
+            </div>
+        </div>
+        <div class="text">This trip began with a drive to NYC and an overnight at the Marriott New York JFK Airport before a Delta flight to Madrid. Upon arrival, the travelers checked into Círculo Gran Vía, Autograph Collection, located in the center of Madrid with easy access to Gran Vía and surrounding neighborhoods.
+
+        Their first scheduled activity was dinner at El Patio at the Four Seasons Madrid. They then took a train to Valencia, where they checked into Hotel Neptuno, a beachfront property with direct access to the marina and shoreline. Dining included reservations at SLVJ Valencia and Marina Beach Club.
+
+        After returning to Madrid by train, they stayed again at Círculo Gran Vía before moving to Hyatt Centric Gran Via Madrid for several days of WPO programming and activities. The trip concluded with a return Delta flight to JFK, followed by a final night at The New York EDITION before driving home to Maryland.</div>
+    </div>
+
+    <script>
+        let slideshows = {};
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initialize slideshows
+            initializeSlideshow("Europe");
+            initializeSlideshow("Lisbon");
+            initializeSlideshow("Spain");
+
+            // Set the first tab as active
+            document.querySelector('.tablink').click();
+        });
+
+        function initializeSlideshow(slideshowId) {
+            slideshows[slideshowId] = {
+                slideIndex: 0,
+                slides: document.querySelectorAll(`#${slideshowId} .slide`),
+                interval: null
+            };
+            showSlides(slideshowId);
+        }
+
+        function openSlideshow(evt, slideshowId) {
+            // Hide all slideshow contents
+            let slideshowContents = document.getElementsByClassName("slideshow-content");
+            for (let i = 0; i < slideshowContents.length; i++) {
+                slideshowContents[i].style.display = "none";
+            }
+
+            // Deactivate all tablinks
+            let tablinks = document.getElementsByClassName("tablink");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the selected slideshow and activate the tab
+            document.getElementById(slideshowId).style.display = "block";
+            evt.currentTarget.className += " active";
+
+            // Stop all slideshows
+            for (let id in slideshows) {
+                clearInterval(slideshows[id].interval);
+            }
+
+            // Start the selected slideshow
+            startSlideshow(slideshowId);
+        }
+
+        function plusSlides(n, slideshowId) {
+            let slideshow = slideshows[slideshowId];
+            slideshow.slideIndex += n;
+            if (slideshow.slideIndex >= slideshow.slides.length) {
+                slideshow.slideIndex = 0;
+            }
+            if (slideshow.slideIndex < 0) {
+                slideshow.slideIndex = slideshow.slides.length - 1;
+            }
+            showSlides(slideshowId);
+        }
+
+        function showSlides(slideshowId) {
+            let slideshow = slideshows[slideshowId];
+            if (!slideshow || !slideshow.slides) return;
+
+            for (let i = 0; i < slideshow.slides.length; i++) {
+                slideshow.slides[i].style.display = "none";
+            }
+            slideshow.slides[slideshow.slideIndex].style.display = "block";
+        }
+    </script>
