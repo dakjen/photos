@@ -29,7 +29,7 @@
             transition: 0.3s;
             font-size: 20px; /* Adjusted font size */
             color: #ffffff; /* White text */
-            font-weight: bold;
+            font-weight:bold;
             font-family: 'DM Sans', sans-serif;
         }
 
@@ -45,16 +45,15 @@
         }
 
         .slideshow-content {
-            width: 100%; /* Changed to 100% to allow flex items to take space */
-            display: flex; /* Added flex display */
-            align-items: flex-start; /* Align items to the top */
-            justify-content: center; /* Center content horizontally */
-            max-width: 1000px; /* Increased max-width for better side-by-side display */
+            width: 80%;
+            max-width: 800px;
         }
 
         .slideshow-container {
             position: relative;
-            width: 50%; /* Each takes 50% of the flex container */
+            width: 100%;
+            max-width: 400px; /* Constrain image container */
+            margin: 0 auto; /* Center the image container */
         }
 
         .slide {
@@ -64,17 +63,17 @@
 
         .slide img {
             width: 100%;
-            max-width: 100%; /* Set a maximum width for the images */
+            max-width: 400px; /* Set a maximum width for the images */
             height: auto;
             border-radius: 5px;
         }
 
         .text {
-            color: #ffffff; /* Ensured text color is white */
-            font-size: 16px; /* Adjusted font size for readability */
-            padding: 0 20px; /* Added padding for spacing */
-            width: 50%; /* Each takes 50% of the flex container */
-            text-align: left; /* Align text to the left */
+            color: #ffffff;
+            font-size: 20px;
+            padding: 15px;
+            font-weight: bold;
+            text-align: justify;
         }
 
         h3 {
@@ -292,64 +291,81 @@
         <div class="slideshow-container">
             <div class="slide fade">
                 <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/0c944fbd-bc1c-46cf-a196-358c4dca69ec.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/1ad42173-5afc-4e92-9bcb-8e236284e3c1.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/25aa0905-4282-4736-9fee-6ea5a6affa2b.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/2c35cfa9-0bf3-42b3-b315-8d51e2734a88.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/6a535b89-a6de-4f38-b2cf-8a2a0a41eb6d.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/8841faf4-4518-41c9-a61e-849e06ca0864.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/88c6621c-93e1-4529-8979-3320e7d55996.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a041a84b-16aa-48d3-895e-315b221e6ea7.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a13ab11d-f1ae-404b-8e53-e67a065c2c46.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a7e42f68-69ae-4f8d-971a-b6a42ab7944d.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a8ad6117-6f14-4696-aa70-a95e4454ea1c.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a8d62a21-64f8-4df6-97fa-3b3a1a235519.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/b236d8da-be19-4da1-8833-2c8131141752.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/c061a956-c009-445f-a4f4-01163838c7f2.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/d2088cf0-1751-40f3-b4e5-86f631a96909.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/e639d9ea-6ff9-4586-ad29-b70dcbfc5621.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/f6c9f708-6b86-4aeb-852b-1577337084bd.JPG" style="width:100%">
-            </div>
-            <div class="slide fade">
-                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/face8ce6-67e3-453b-882b-5f252aba7667.JPG" style="width:100%">
-            </div>
-        </div>
         <div class="text">This trip began with a drive to NYC and an overnight at the Marriott New York JFK Airport before a Delta flight to Madrid. Upon arrival, the travelers checked into Círculo Gran Vía, Autograph Collection, located in the center of Madrid with easy access to Gran Vía and surrounding neighborhoods.
 
         Their first scheduled activity was dinner at El Patio at the Four Seasons Madrid. They then took a train to Valencia, where they checked into Hotel Neptuno, a beachfront property with direct access to the marina and shoreline. Dining included reservations at SLVJ Valencia and Marina Beach Club.
 
         After returning to Madrid by train, they stayed again at Círculo Gran Vía before moving to Hyatt Centric Gran Via Madrid for several days of WPO programming and activities. The trip concluded with a return Delta flight to JFK, followed by a final night at The New York EDITION before driving home to Maryland.</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/1ad42173-5afc-4e92-9bcb-8e236284e3c1.JPG" style="width:100%">
+                <div class="text">1ad42173-5afc-4e92-9bcb-8e236284e3c1.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/25aa0905-4282-4736-9fee-6ea5a6affa2b.JPG" style="width:100%">
+                <div class="text">25aa0905-4282-4736-9fee-6ea5a6affa2b.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/2c35cfa9-0bf3-42b3-b315-8d51e2734a88.JPG" style="width:100%">
+                <div class="text">2c35cfa9-0bf3-42b3-b315-8d51e2734a88.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/6a535b89-a6de-4f38-b2cf-8a2a0a41eb6d.JPG" style="width:100%">
+                <div class="text">6a535b89-a6de-4f38-b2cf-8a2a0a41eb6d.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/8841faf4-4518-41c9-a61e-849e06ca0864.JPG" style="width:100%">
+                <div class="text">8841faf4-4518-41c9-a61e-849e06ca0864.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/88c6621c-93e1-4529-8979-3320e7d55996.JPG" style="width:100%">
+                <div class="text">88c6621c-93e1-4529-8979-3320e7d55996.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a041a84b-16aa-48d3-895e-315b221e6ea7.JPG" style="width:100%">
+                <div class="text">a041a84b-16aa-48d3-895e-315b221e6ea7.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a13ab11d-f1ae-404b-8e53-e67a065c2c46.JPG" style="width:100%">
+                <div class="text">a13ab11d-f1ae-404b-8e53-e67a065c2c46.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a7e42f68-69ae-4f8d-971a-b6a42ab7944d.JPG" style="width:100%">
+                <div class="text">a7e42f68-69ae-4f8d-971a-b6a42ab7944d.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a8ad6117-6f14-4696-aa70-a95e4454ea1c.JPG" style="width:100%">
+                <div class="text">a8ad6117-6f14-4696-aa70-a95e4454ea1c.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/a8d62a21-64f8-4df6-97fa-3b3a1a235519.JPG" style="width:100%">
+                <div class="text">a8d62a21-64f8-4df6-97fa-3b3a1a235519.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/b236d8da-be19-4da1-8833-2c8131141752.JPG" style="width:100%">
+                <div class="text">b236d8da-be19-4da1-8833-2c8131141752.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/c061a956-c009-445f-a4f4-01163838c7f2.JPG" style="width:100%">
+                <div class="text">c061a956-c009-445f-a4f4-01163838c7f2.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/d2088cf0-1751-40f3-b4e5-86f631a96909.JPG" style="width:100%">
+                <div class="text">d2088cf0-1751-40f3-b4e5-86f631a96909.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/e639d9ea-6ff9-4586-ad29-b70dcbfc5621.JPG" style="width:100%">
+                <div class="text">e639d9ea-6ff9-4586-ad29-b70dcbfc5621.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/f6c9f708-6b86-4aeb-852b-1577337084bd.JPG" style="width:100%">
+                <div class="text">f6c9f708-6b86-4aeb-852b-1577337084bd.JPG</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/dakjen/photos/main/visual/slideshow/spain/face8ce6-67e3-453b-882b-5f252aba7667.JPG" style="width:100%">
+                <div class="text">face8ce6-67e3-453b-882b-5f252aba7667.JPG</div>
+            </div>
+        </div>
     </div>
 
     <script>
